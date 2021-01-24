@@ -1,5 +1,7 @@
 <?php
 
+include_once __DIR__ . "/../Service/DBConnector.php";
+
 class Product
 {
     public $id;
@@ -26,7 +28,7 @@ class Product
         $updated = null
     )
     {
-        $this->conn = mysqli_connect("localhost", "shop_user", "shop_password", "db_shop");
+        $this->conn = DBConnector::getInstance()->connect();
 
         $this->id = $id;
         $this->title = $title;
