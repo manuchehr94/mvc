@@ -14,7 +14,7 @@ class ProductController implements ControllerInterface
     public function read()
     {
         $allProducts = (new Product())->all();
-        include_once __DIR__ . "/../../Views/product/all.php";
+        include_once __DIR__ . "/../../Views/product/List.php";
     }
 
     public function save()
