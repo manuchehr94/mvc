@@ -75,6 +75,29 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="/php/Alif_Academy_php/MVC/index.php?model=shop&action=read" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                Shops
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/php/Alif_Academy_php/MVC/index.php?model=shop&action=create" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Create a Shop</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/php/Alif_Academy_php/MVC/index.php?model=shop&action=read" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>List of Shops</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
