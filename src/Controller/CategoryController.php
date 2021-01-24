@@ -1,33 +1,55 @@
 <?php
 
 include_once __DIR__ . "/Interface/ControllerInterface.php";
+include_once __DIR__ . "/../Model/Category.php";
 
 class CategoryController implements ControllerInterface
 {
-    public function read()
-    {
-        echo "read category !!!";
-    }
-
     public function create()
     {
-        echo "CREATE category!!!";
+        include_once __DIR__ . "/../../Views/category/form.php";
+    }
+
+    public function read()
+    {
+        $allCategories = (new Category())->all();
+        include_once __DIR__ . "/../../Views/category/List.php";
     }
 
     public function save()
     {
+        if(!empty($_POST)) {
 
+            $category = new Category(
+                intval($_POST['id']),
+                htmlspecialchars($_POST['title']),
+                intval($_POST['group_id']),
+                intval($_POST['parent_id'])
+            );
+
+            $category->save();
+        }
+
+        return $this->read();
     }
 
     public function delete()
     {
-        echo "delete category!!!";
+        $id = (int)$_GET['id'];
+        (new Category())->deleteById($id);
+        return $this->read();
     }
 
     public function update()
     {
-        echo "update category!!!";
+        $id = (int)$_GET['id'];
+
+        if(empty($id)) die("Undefined id");
+
+        $oneCategory = (new Category())->getById($id);
+
+        if(empty($oneCategory)) die("Category is not found");
+
+        include_once __DIR__ . "/../../Views/category/form.php";
     }
-
-
 }
