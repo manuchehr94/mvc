@@ -98,6 +98,29 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="/php/Alif_Academy_php/MVC/index.php?model=news&action=read" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                News
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/php/Alif_Academy_php/MVC/index.php?model=news&action=create" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Create news</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/php/Alif_Academy_php/MVC/index.php?model=news&action=read" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>List of News</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
