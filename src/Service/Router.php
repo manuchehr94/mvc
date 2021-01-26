@@ -7,7 +7,6 @@ class Router
         $model = $_GET['model'] ?? 'product';
         $model = htmlspecialchars($model);
         $model = ucfirst($model);
-
         $controller = $model . 'Controller';
 
         if(!file_exists(__DIR__ . "/../Controller/" . $controller . ".php")){
