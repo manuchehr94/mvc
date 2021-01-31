@@ -20,112 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/category/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/category/List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/category/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/category/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/news/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/news/List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/news/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/news/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/product/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/product/List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/product/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/product/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/shop/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/shop/List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/shop/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/shop/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_add_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_add_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_add_category_rollback.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_add_category_rollback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_add_city.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_add_city.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_add_city_rollback.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_add_city_rollback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_add_field_prior.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_add_field_prior.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_add_field_prior_rollback.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_add_field_prior_rollback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_fixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_fixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Fixtures/Fixture01.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Fixtures/Fixture01.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Fixtures/Fixture02.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Fixtures/Fixture02.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Fixtures/Fixture03.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Fixtures/Fixture03.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Fixtures/Fixture04.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Fixtures/Fixture04.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/202101270940_migration_add_field_prior_to_categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/202101270940_migration_add_field_prior_to_categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/202101271027_migration_add_field_city_to_shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/202101271027_migration_add_field_city_to_shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/202101272018_migration_add_field_category_to_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/202101272018_migration_add_field_category_to_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Model/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Model/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Service/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/DBConnector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Service/FileUploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/FileUploader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Service/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/01.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/02.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/03.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/04.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/04.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/05.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/05.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/06.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/06.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/07.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/07.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/08.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/08.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/09.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/09.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uploads/products/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stars/fontawesome-all.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/stars/fontawesome-all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stars/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/stars/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/HarmoniaSansProCyr-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TitilliumText22L006.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Counter Bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Counter Bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Featured Bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Featured Bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Img2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Product Img.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Product Img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Product1.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Product1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Product2.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Product2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Product3.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Product3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Product4.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Product4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Products_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Products_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/addToCart.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/addToCart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bestProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/bestProduct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bigProduct.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/bigProduct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cart_.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/cart_.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/email.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/email.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/facebook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/google.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/google.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/instagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/like.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/like.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/main.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/main.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/main_mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/main_mobile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/paymentImages.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/paymentImages.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/phone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/sale.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/sale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/search.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/share.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/share.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/twitter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/img/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product show.html" beforeDir="false" afterPath="$PROJECT_DIR$/product show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/products.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +71,7 @@
       <workItem from="1611992772368" duration="1141000" />
       <workItem from="1611996672045" duration="21841000" />
       <workItem from="1612026208104" duration="902000" />
-      <workItem from="1612072106478" duration="3486000" />
+      <workItem from="1612072106478" duration="4529000" />
     </task>
     <servers />
   </component>
