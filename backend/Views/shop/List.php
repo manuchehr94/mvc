@@ -45,12 +45,12 @@
                                         </i>
                                         View
                                     </a>-->
-                                    <a class="btn btn-info btn-sm" href="/php/Alif_Academy_php/MVC/index.php?model=shop&action=update&id=<?=$shop['id']?>">
+                                    <a class="btn btn-info btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=shop&action=update&id=<?=$shop['id']?>">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="/php/Alif_Academy_php/MVC/index.php?model=shop&action=delete&id=<?=$shop['id']?>">
+                                    <a class="btn btn-danger btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=shop&action=delete&id=<?=$shop['id']?>">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

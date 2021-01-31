@@ -1,7 +1,7 @@
 <?php
 
 include_once __DIR__ . "/Interface/ControllerInterface.php";
-include_once __DIR__ . "/../Model/Category.php";
+include_once __DIR__ . "/../../../common/src/Model/Category.php";
 
 class CategoryController implements ControllerInterface
 {

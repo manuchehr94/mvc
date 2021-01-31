@@ -47,7 +47,6 @@ class Category
     public function all()
     {
         $result = mysqli_query($this->conn, "Select * from categories order by id DESC");
-
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     }

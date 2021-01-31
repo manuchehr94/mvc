@@ -43,7 +43,7 @@
                             <tr>
                                 <td><?=$products['id']?></td>
                                 <td><?=$products['title']?></td>
-                                <td><img src ="uploads/products/<?=$products['picture']?>" style="width: 100px;"></td>
+                                <td><img src ="http://localhost/php/Alif_Academy_php/shop/uploads/products/<?=$products['picture']?>" style="width: 100px;"></td>
                                 <td><?=$products['preview']?></td>
                                 <td><?=$products['price']?></td>
                                 <td><?=$products['status']?></td>
@@ -55,12 +55,12 @@
                                         </i>
                                         View
                                     </a>-->
-                                    <a class="btn btn-info btn-sm" href="/php/Alif_Academy_php/MVC/index.php?model=product&action=update&id=<?=$products['id']?>">
+                                    <a class="btn btn-info btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=product&action=update&id=<?=$products['id']?>">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="/php/Alif_Academy_php/MVC/index.php?model=product&action=delete&id=<?=$products['id']?>">
+                                    <a class="btn btn-danger btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=product&action=delete&id=<?=$products['id']?>">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

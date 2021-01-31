@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . "/src/Service/Router.php";
+include_once __DIR__ . "/../common/src/Service/Router.php";
 
-$router = new Router();
+$router = new Router('backend');
 $router->index();

@@ -20,7 +20,7 @@
     </section>
     <section class="content">
         <div class="card card-info">
-            <form class="form-horizontal" action="/php/Alif_Academy_php/MVC/index.php?model=product&action=save" method="post" enctype="multipart/form-data">
+            <form class="form-horizontal" action="/php/Alif_Academy_php/shop/backend/index.php?model=product&action=save" method="post" enctype="multipart/form-data">
                <div class="card-body">
                    <input value="<?=$oneProduct['id'] ?? "" ?>" type = "hidden" name ="id">
                    <div class="form-group row">
@@ -35,7 +35,7 @@
                             <input type ="file" name = "picture" class="form-control">
                             <?php
                                 if(!empty($oneProduct['picture'])){
-                                    ?><img src="uploads/products/<?=$oneProduct['picture'] ?>" style="width: 70px;"><?php
+                                    ?><img src="http://localhost/php/Alif_Academy_php/shop/uploads/products/<?=$oneProduct['picture'] ?>" style="width: 70px;"><?php
                                 }
                             ?>
                         </div>

@@ -47,14 +47,14 @@ table {
 /*  fonts      */
 @font-face {	
 	font-family: "Harmonia Sans"; 
-	src: url("../fonts/HarmoniaSansProCyr-Regular.otf"); 
+	src: url("../../fonts/HarmoniaSansProCyr-Regular.otf");
 	font-style: normal; 
 	font-weight: normal; 
 } 
 
 @font-face {	
 	font-family: "Titillium Text"; 
-	src: url("../fonts/TitilliumText22L006.otf"); 
+	src: url("../../fonts/TitilliumText22L006.otf");
 	font-style: normal; 
 } 
 
@@ -433,7 +433,7 @@ header {
 
 .saleImg {
 	width: 80px;
-	background: url(../img/sale.png) no-repeat;	
+	background: url(../img/sale.png) no-repeat;
 	height: 80px;
 	position: relative;
 	color: #fff;

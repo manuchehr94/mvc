@@ -1,7 +1,7 @@
 <?php
 
 include_once __DIR__ . "/Interface/ControllerInterface.php";
-include_once __DIR__ . "/../Model/News.php";
+include_once __DIR__ . "/../../../common/src/Model/News.php";
 
 class NewsController implements ControllerInterface
 {

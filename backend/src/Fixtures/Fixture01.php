@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . "/../Service/DBConnector.php";
+include_once __DIR__ . "/../../../common/src/Service/DBConnector.php";
 
 
 class Fixture01
@@ -129,7 +129,7 @@ class Fixture01
     public function run()
     {
         foreach ($this->data as $product) {
-            copy(__DIR__ . "/../../fixtures_pics/" . $product['picture'], __DIR__ . "/../../uploads/products/" . $product['picture']);
+            copy(__DIR__ . "/../../fixtures_pics/" . $product['picture'], __DIR__ . "/../../../uploads/products/" . $product['picture']);
 
             mysqli_query($this->conn,
                 "INSERT INTO products VALUES (
