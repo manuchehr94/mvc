@@ -56,7 +56,7 @@ class Product
                                          where id=" . $this->id . " limit 1";
 
         } else {
-            $query = "INSERT INTO products VALUES (
+            $query = "INSERT INTO products (id, title, preview, picture, content, price, status, created, updated) VALUES (
                                             null, 
                                             '" . $this->title . "', 
                                             '" . $this->picture . "', 
