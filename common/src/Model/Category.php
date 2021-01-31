@@ -7,19 +7,19 @@ class Category
 {
     public $id;
     public $title;
-    public $group_id;
-    public $parent_id;
+    public $groupId;
+    public $parentId;
 
     private $conn;
 
-    public function __construct($id = null, $title = null, $group_id = null, $parent_id = null)
+    public function __construct($id = null, $title = null, $groupId = null, $parentId = null)
     {
         $this->conn = DBConnector::getInstance()->connect();
 
         $this->id = $id;
         $this->title = $title;
-        $this->group_id = $group_id;
-        $this->parent_id = $parent_id;
+        $this->groupId = $groupId;
+        $this->parentId = $parentId;
     }
 
     public function save()
@@ -28,16 +28,16 @@ class Category
 
             $query = "Update categories set 
                                         title='" . $this->title . "', 
-                                        group_id='" . $this->group_id . "', 
-                                         parent_id='" . $this->parent_id . "'
+                                        group_id='" . $this->groupId . "', 
+                                         parent_id='" . $this->parentId . "'
                                          where id=" . $this->id . " limit 1";
 
         } else {
             $query = "INSERT INTO categories VALUES (
                                             null, 
                                             '" . $this->title . "', 
-                                            '" . $this->group_id . "', 
-                                            '" . $this->parent_id . "'
+                                            '" . $this->groupId . "', 
+                                            '" . $this->parentId . "'
             )";
         }
 
