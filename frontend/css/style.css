@@ -75,14 +75,13 @@ header {
 .getInTouch {
 	display: flex; 
 	justify-content: space-between; 
-	padding: 24px 0 22px 0; 
-	font-family: "Harmonia Sans";
-	font-size: 12px; 
+	padding: 24px 0 22px 0;
 }
 
 .contacts {
 	display: flex; 
-	text-align: center;
+	font-size: 12px;
+	font-family: "Harmonia Sans";
 }
 
 .headerEmailImg img {
@@ -90,7 +89,11 @@ header {
 }
 
 .headerEmailImg h2, .headerPhoneImg h2{
-	padding: 0 20px 0 9.5px; 
+	padding: 0 20px 0 9.5px;
+}
+.headerPhoneImg h2 {
+	padding-right: 0;
+	width: 100px;
 }
 
 .social a{
@@ -1278,7 +1281,7 @@ header {
 }
 
 .headerEmailImg, .headerPhoneImg {
-	display: flex; 
+	display: flex;
 }
 
 .menuToggle {
@@ -1287,7 +1290,7 @@ header {
 	align-items: center;
 	color: #49525d;
 	font-family: "Harmonia Sans";
-	cursor: pointer; 
+	cursor: pointer;
 //	margin-left: 30px; 
 //	margin-right: 40px;
 //	margin-bottom: 40px;

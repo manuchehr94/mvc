@@ -21,7 +21,7 @@
                 </div>
                 <div class="headerPhoneImg">
                     <img src="/img/phone.png" alt="phone">
-                    <h2>453 - 5553 - 996</h2>
+                    <h2>453 &ndash; 5553 &ndash; 996</h2>
                 </div>
             </div>
             <div class="social">
