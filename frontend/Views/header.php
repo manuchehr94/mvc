@@ -35,7 +35,7 @@
             <div class="logo">
                 <div class="logoShopy">
                     <span>sh</span>
-                    <a href="#"><img src="/img/logo.png" alt="logo" title="logo"></a>
+                    <a href="/"><img src="/img/logo.png" alt="logo" title="logo"></a>
                     <span class="py">py</span>
                 </div>
                 <h2 class="shopAnyWhere">shop any where</h2>
@@ -43,8 +43,8 @@
             <nav class="navMenu">
                 <div class="menuToggle">Menu</div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="products.html">Products</a><li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="http://shop.local/?model=product&action=all">Products</a><li>
                     <li><a href="#">Hot deals</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
