@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . "/../../../common/src/Model/Product.php";
+include_once __DIR__ . "/../../../common/src/Service/ExceptionService.php";
 
 class ProductController
 {
@@ -12,16 +13,30 @@ class ProductController
 
     public function view()
     {
-        $allProducts = (new Product())->all();
+        try {
+            $allProducts = (new Product())->all();
 
-        $id = (int)$_GET['id'];
+            if(!isset($_GET['id'])) {
+                throw new Exception('Id doesn\'t exist', 400);
+            }
 
-        if(empty($id)) die("Undefined id");
+            $id = (int)$_GET['id'];
 
-        $oneProduct = (new Product())->getById($id);
+            if(empty($id)) {
+                throw new Exception('Id isn\'t defined', 400);
+            }
 
-        if(empty($oneProduct)) die("Product is not found");
+            $oneProduct = (new Product())->getById($id);
 
-        include_once __DIR__ . "/../../Views/product/view.php";
+            if(empty($oneProduct)) {
+                throw new Exception('Product doesn\'t exist', 404);
+            }
+
+            include_once __DIR__ . "/../../Views/product/view.php";
+
+        } catch (Exception $e) {
+            $error = new ExceptionService();
+        }
+
     }
 }
