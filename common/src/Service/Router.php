@@ -1,5 +1,7 @@
 <?php
 
+include_once __DIR__ . "/../../../common/src/Service/ExceptionService.php";
+
 
 class Router
 {
@@ -11,28 +13,32 @@ class Router
     }
 
     public function index() {
-        $model = $_GET['model'] ?? 'site';
-        $model = htmlspecialchars($model);
-        $model = ucfirst($model);
-        $controller = $model . 'Controller';
+        try {
+            $model = $_GET['model'] ?? 'site';
+            $model = htmlspecialchars($model);
+            $model = ucfirst($model);
+            $controller = $model . 'Controller';
 
-        if(!file_exists(__DIR__ . "/../../../" . $this->side . "/src/Controller/" . $controller . ".php")){
-            die("Controller not found!");
-        }
-
-
-        include_once __DIR__ . "/../../../" . $this->side . "/src/Controller/" . $controller . ".php";
-
-        $action = $_GET['action'] ?? 'index';
-        $action = htmlspecialchars($action);
-
-        if(isset($action)) {
-            $objController = new $controller();
-            if(method_exists($objController, $action)) {
-                return $objController->$action();
+            if(!file_exists(__DIR__ . "/../../../" . $this->side . "/src/Controller/" . $controller . ".php")){
+               throw new Exception('Controller not found', 404);
             }
 
-            die("Undefined action");
+
+            include_once __DIR__ . "/../../../" . $this->side . "/src/Controller/" . $controller . ".php";
+
+            $action = $_GET['action'] ?? 'index';
+            $action = htmlspecialchars($action);
+
+            if(isset($action)) {
+                $objController = new $controller();
+                if(method_exists($objController, $action)) {
+                    return $objController->$action();
+                }
+
+                throw new Exception('Action not found', 404);
+            }
+        } catch(Exception $e) {
+            ExceptionService::error($e,'frontend');
         }
     }
 }
