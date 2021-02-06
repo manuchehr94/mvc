@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Service/ExceptionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/ExceptionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/BasketItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/BasketItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Views/product/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/product/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,7 @@
       <workItem from="1612272387606" duration="187000" />
       <workItem from="1612341845868" duration="5000" />
       <workItem from="1612542000254" duration="4000" />
-      <workItem from="1612588052701" duration="9162000" />
+      <workItem from="1612588052701" duration="18828000" />
     </task>
     <servers />
   </component>
@@ -103,21 +106,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1612190488238">
+    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1612628014700">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1612190488238" />
+    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1612628014700" />
     <state x="518" y="307" key="NewPhpFileDialog" timestamp="1612598392001">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="518" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1612598392001" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1612180384428">
+    <state x="339" y="172" key="run.anything.popup" timestamp="1612622781124">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1612180384428" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1612180338642">
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1612622781124" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1612616986003">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1612180338642" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1612616986003" />
   </component>
 </project>

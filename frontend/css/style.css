@@ -1000,9 +1000,15 @@ header {
 	text-align: center;
 	line-height: 45px;
 	text-decoration: none;
+	border-width: 0;
 	border-radius: 24px;
 	position: relative; 
 	bottom: 15px;
+}
+
+.orderNow:hover {
+	cursor: pointer;
+	background: #4a535e;
 }
 
 /* Products */

@@ -44,9 +44,9 @@ class BasketItem
 
     public function getByBasketId($basketId)
     {
-        $result = mysqli_query($this->conn, "Select * from basket_item where basket_id = $basketId limit 1");
-        $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
-        return reset($oneProduct);
+        $result = mysqli_query($this->conn, "Select * from basket_item where basket_id = $basketId");
+        $all = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        return $all;
     }
 
     public function deleteByBasketId($basketId)

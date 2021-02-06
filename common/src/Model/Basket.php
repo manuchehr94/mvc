@@ -26,9 +26,10 @@ class Basket
         }
     }
 
-    public function getByUserId($userId)
+    public function getFromId()
     {
-        $result = mysqli_query($this->conn, "Select * from basket where user_id = $userId limit 1");
+        $result = mysqli_query($this->conn, "Select * from basket where user_id = 
+                                                            " . $this->userId . " limit 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneProduct);
     }

@@ -56,7 +56,11 @@ include_once __DIR__ . "/../header.php";
                             <a href="#"><img src="/img/cart_.png" alt="add to cart"></a>
                             <a href="#"><img src="/img/like.png" alt="put like"></a>
                         </div>
-                        <a class="orderNow" href="#">Order Now</a>
+                        <form action="/?model=basket&action=addProduct" method="POST">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="hidden" name="product_id" value="<?=$oneProduct['id']?>">
+                            <button class="orderNow">Order Now</button>
+                        </form>
                     </div>
                 </div>
             </div>
