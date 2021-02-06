@@ -5,6 +5,7 @@ class ExceptionService
 {
     public static function error(Exception $e, $side)
     {
+        http_response_code($e->getCode());
         //error_log
         $code = $e->getCode();
         $message = $e->getMessage();

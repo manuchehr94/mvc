@@ -32,7 +32,7 @@ include_once __DIR__ . "/../header.php";
         <div class="recentProducts">
             <?php for ($i = 0; $i < 4; $i++) : ?>
             <div class="item">
-                <a class="productImg" href=/?model=product&action=view&id=<?=$allProducts[$i]['id']?>">
+                <a class="productImg" href="/?model=product&action=view&id=<?=$allProducts[$i]['id']?>">
                     <img alt="photo" src="http://localhost/php/Alif_Academy_php/shop/uploads/products/<?=$allProducts[$i]['picture']?>">
                 </a>
                 <h2 class="trackJacket"><?=$allProducts[$i]['title']?></h2>
