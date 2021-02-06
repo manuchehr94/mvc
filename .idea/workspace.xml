@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Service/ExceptionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/ExceptionService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/site/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +43,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/Views/Exception" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/Model" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\Views\Exception" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Model" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -83,7 +82,7 @@
       <workItem from="1612272387606" duration="187000" />
       <workItem from="1612341845868" duration="5000" />
       <workItem from="1612542000254" duration="4000" />
-      <workItem from="1612588052701" duration="3578000" />
+      <workItem from="1612588052701" duration="6960000" />
     </task>
     <servers />
   </component>
@@ -107,10 +106,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1612190488238" />
-    <state x="518" y="307" key="NewPhpFileDialog" timestamp="1612189747099">
+    <state x="518" y="307" key="NewPhpFileDialog" timestamp="1612598392001">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="518" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1612189747099" />
+    <state x="518" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1612598392001" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1612180384428">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
