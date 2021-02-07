@@ -3,6 +3,7 @@
 include_once __DIR__ . "/../../../common/src/Service/BasketService.php";
 include_once __DIR__ . "/../../../common/src/Service/UserService.php";
 include_once __DIR__ . "/../../../common/src/Model/BasketItem.php";
+include_once __DIR__ . "/../../../common/src/Model/Product.php";
 
 class BasketController
 {
@@ -40,10 +41,11 @@ class BasketController
         $basket = BasketService::getBasketByUserId($this->user['id']);
         $items = (new BasketItem())->getByBasketId($basket['id']);
 
-        echo "<pre>";
-        print_r($items);
-        echo "</pre>";
-        die();
+        foreach ($items as $key => $item) {
+            $items[$key]['product'] = (new Product())->getById($item['product_id']);
+        }
+
+        include_once __DIR__ . "/../../Views/basket/view.php";
     }
 
 }
