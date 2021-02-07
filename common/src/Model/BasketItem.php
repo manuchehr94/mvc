@@ -49,9 +49,14 @@ class BasketItem
         return $all;
     }
 
-    public function deleteByBasketId($basketId)
+    public function deleteProductByBasketId($productId, $basketId)
     {
-        return mysqli_query($this->conn, "delete from basket_item where basket_id = $basketId limit 1");
+        return mysqli_query($this->conn, "delete from basket_item where product_id = $productId and basket_id = $basketId limit 1");
+    }
+
+    public function clearByBasketId($basketId)
+    {
+        return mysqli_query($this->conn, "delete from basket_item where basket_id = $basketId");
     }
 
 }

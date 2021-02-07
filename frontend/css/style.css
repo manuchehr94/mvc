@@ -1321,6 +1321,22 @@ header {
 	width: 100%;
 }
 
+#basket_container {
+	width: 100%;
+	display: block;
+	margin: 20px 0;
+}
+
+#basket_container thead th {
+	text-align: left;
+	padding: 20px 10px;
+}
+
+#basket_container .total{
+	text-align: right;
+	padding: 20px;
+}
+
 /* media-quaries*/
 
 @media screen and (max-width: 1180px) {
