@@ -25,7 +25,19 @@ class BasketController
             throw new Exception('Empty product');
         }
 
-        //TODO Need to change User Id
+
+        $items = (new BasketItem())->getByBasketId($this->basket['id']);
+
+        foreach ($items as $item) {
+            if($item['product_id'] == $productId) {
+                $item = new BasketItem($this->basket['id'], $productId, $item['quantity'] + $quantity);
+                $item->update();
+
+                header("Location: /?model=basket&action=view");
+                die();
+                //exit();
+            }
+        }
 
         $item = new BasketItem();
         $item->basketId = $this->basket['id'];
@@ -57,6 +69,18 @@ class BasketController
         $basketId = $this->basket['id'];
 
         (new BasketItem())->deleteProductByBasketId($productId, $basketId);
+
+        header("Location: /?model=basket&action=view");
+        exit();
+    }
+
+    public function change()
+    {
+        $productId = (int)$_POST['product_id'];
+        $quantity = (int)$_POST['quantity'];
+        $basketId = $this->basket['id'];
+
+        (new BasketItem($basketId, $productId, $quantity))->update();
 
         header("Location: /?model=basket&action=view");
         exit();

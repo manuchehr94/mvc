@@ -4,7 +4,6 @@ include_once __DIR__ . "/../Service/DBConnector.php";
 
 class BasketItem
 {
-    public $id;
     public $basketId;
     public $productId;
     public $quantity;
@@ -25,15 +24,30 @@ class BasketItem
 
     public function save()
     {
-        if($this->id) {
-            $query = "UPDATE basket_item set quantity=" .
-                $this->quantity ." WHERE id = " . $this->id . " LIMIT 1";
-        } else {
-            $query = "INSERT INTO basket_item (id, basket_id, product_id, quantity) VALUES ( 
-                null, '" . $this->basketId . "', '" . $this->productId . "', '" . $this->quantity . "'
-                        
-            )";
+        $query = "INSERT INTO basket_item (id, basket_id, product_id, quantity) 
+        VALUES ( 
+            null, '" . $this->basketId . "', '" . $this->productId . "', '" . $this->quantity . "'
+                    
+        )";
+
+        $result = mysqli_query($this->conn, $query);
+
+        if(!$result) {
+            throw new Exception(mysqli_error($this->conn));
         }
+    }
+
+    public function update()
+    {
+
+        if(empty($this->basketId) || empty($this->productId) || empty($this->quantity)) {
+            throw new Exception('Empty basket item field');
+        }
+
+        $query = "UPDATE basket_item set quantity = " . $this->quantity . " 
+                            WHERE basket_id = " . $this->basketId . " 
+                            AND product_id = " . $this->productId . " 
+                            LIMIT 1";
 
         $result = mysqli_query($this->conn, $query);
 
