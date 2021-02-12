@@ -1,7 +1,11 @@
 <?php
 
+session_start();
+
 include_once __DIR__ . "/../../../common/src/Service/BasketService.php";
+include_once __DIR__ . "/../../../common/src/Service/BasketSessionService.php";
 include_once __DIR__ . "/../../../common/src/Service/UserService.php";
+include_once __DIR__ . "/../../../common/src/Service/ProductService.php";
 include_once __DIR__ . "/../../../common/src/Model/BasketItem.php";
 include_once __DIR__ . "/../../../common/src/Model/Product.php";
 
@@ -9,11 +13,16 @@ class BasketController
 {
     public $user;
     public $basket;
+    public $items;
+    public $basketService;
 
     public function __construct()
     {
         $this->user = UserService::getCurrentUser();
         $this->basket = BasketService::getBasketByUserId($this->user['id']);
+       // $this->basketService = (new BasketService());
+        $this->basketService = (new BasketSessionService());
+        $this->items = $this->basketService->getBasketProducts((int)$this->basket['id']);
     }
 
     public function addProduct()
@@ -25,65 +34,53 @@ class BasketController
             throw new Exception('Empty product');
         }
 
-
-        $items = (new BasketItem())->getByBasketId($this->basket['id']);
-
-        foreach ($items as $item) {
+        foreach ($this->items as $item) {
             if($item['product_id'] == $productId) {
-                $item = new BasketItem($this->basket['id'], $productId, $item['quantity'] + $quantity);
-                $item->update();
-
-                header("Location: /?model=basket&action=view");
+                $this->basketService->updateBasketItem($this->basket['id'],
+                                                        $productId,
+                                                        $item['quantity'] + $quantity
+                                                        );
+                $this->redirectToBasket();
                 die();
-                //exit();
             }
         }
 
-        $item = new BasketItem();
-        $item->basketId = $this->basket['id'];
-        $item->productId = $productId;
-        $item->quantity = $quantity;
-        $item->save();
+        $this->basketService->createBasketItem($this->basket['id'], $productId, $quantity);
 
-        header("Location: /?model=basket&action=view");
-        exit();
+        $this->redirectToBasket();
     }
 
     public function view()
     {
-        $items = (new BasketItem())->getByBasketId($this->basket['id']);
-
-        $total = 0;
-        foreach ($items as $key => $item) {
-            $items[$key]['product'] = (new Product())->getById($item['product_id']);
-            $items[$key]['product']['sum'] =  $items[$key]['product']['price'] * $items[$key]['quantity'];
-            $total = $total + $items[$key]['product']['sum'];
-        }
-
+        $result = (new ProductService())->getBasketItems($this->items);
+        $items = $result['items'];
+        $total = $result['total'];
         include_once __DIR__ . "/../../Views/basket/view.php";
     }
 
     public function delete()
     {
-        $productId = (int)$_POST['product_id'];
-        $basketId = $this->basket['id'];
-
-        (new BasketItem())->deleteProductByBasketId($productId, $basketId);
-
-        header("Location: /?model=basket&action=view");
-        exit();
+        $this->basketService->deleteBasketItem(
+                                                (int)$_POST['product_id'],
+                                                $this->basket['id']
+                                                );
+        $this->redirectToBasket();
     }
 
     public function change()
     {
-        $productId = (int)$_POST['product_id'];
-        $quantity = (int)$_POST['quantity'];
-        $basketId = $this->basket['id'];
+        $this->basketService->updateBasketItem(
+                                                $this->basket['id'],
+                                                (int)$_POST['product_id'],
+                                                (int)$_POST['quantity']
+                                                );
 
-        (new BasketItem($basketId, $productId, $quantity))->update();
+        $this->redirectToBasket();
+    }
 
+    public function redirectToBasket()
+    {
         header("Location: /?model=basket&action=view");
-        exit();
     }
 
 }
