@@ -4,6 +4,7 @@ session_start();
 
 include_once __DIR__ . "/../../../common/src/Service/BasketService.php";
 include_once __DIR__ . "/../../../common/src/Service/BasketSessionService.php";
+include_once __DIR__ . "/../../../common/src/Service/BasketCookieService.php";
 include_once __DIR__ . "/../../../common/src/Service/UserService.php";
 include_once __DIR__ . "/../../../common/src/Service/ProductService.php";
 include_once __DIR__ . "/../../../common/src/Model/BasketItem.php";
@@ -21,7 +22,10 @@ class BasketController
         $this->user = UserService::getCurrentUser();
         $this->basket = BasketService::getBasketByUserId($this->user['id']);
        // $this->basketService = (new BasketService());
-        $this->basketService = (new BasketSessionService());
+        //$this->basketService = (new BasketSessionService());
+        $this->basketService = (new BasketCookieService());
+
+
         $this->items = $this->basketService->getBasketProducts((int)$this->basket['id']);
     }
 
