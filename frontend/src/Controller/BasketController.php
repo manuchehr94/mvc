@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 
 include_once __DIR__ . "/../../../common/src/Service/BasketService.php";
 include_once __DIR__ . "/../../../common/src/Service/BasketSessionService.php";
@@ -20,6 +19,11 @@ class BasketController
     public function __construct()
     {
         $this->user = UserService::getCurrentUser();
+
+        if(!isset($this->user['login'])) {
+            throw new Exception("No permission", 403);
+        }
+
         $this->basket = BasketService::getBasketByUserId($this->user['id']);
        // $this->basketService = (new BasketService());
         //$this->basketService = (new BasketSessionService());

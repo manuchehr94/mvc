@@ -5,11 +5,14 @@ class UserService
 {
     public static function getCurrentUser()
     {
-        return [
-            'id' => 1,
-            'role' => 'quest'
-        ];
+        $user = $_SESSION['current_user'] ?? null;
 
+        return !empty($user) ? unserialize($user) : [];
+    }
+
+    public static function saveUserData($user)
+    {
+        $_SESSION['current_user'] = serialize($user);
     }
 
 }

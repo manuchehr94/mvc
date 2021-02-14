@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Service/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Controller/BasketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/BasketController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/SiteController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +47,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/Service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/Controller" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Controller" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Service" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\Views\Exception" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
@@ -91,7 +94,8 @@
       <workItem from="1612895718056" duration="794000" />
       <workItem from="1613129622815" duration="7664000" />
       <workItem from="1613148499640" duration="2230000" />
-      <workItem from="1613222289152" duration="3896000" />
+      <workItem from="1613222289152" duration="8144000" />
+      <workItem from="1613290476614" duration="888000" />
     </task>
     <servers />
   </component>
@@ -115,21 +119,21 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613149193730" />
-    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1613145735909">
+    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1613232677421">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1613145735909" />
-    <state x="518" y="307" key="NewPhpFileDialog" timestamp="1613147107299">
+    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1613232677421" />
+    <state x="518" y="307" key="NewPhpFileDialog" timestamp="1613231716232">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="518" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1613147107299" />
+    <state x="518" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1613231716232" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1613142394153">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1613142394153" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1613222523491">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1613291047271">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1613222523491" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1613291047271" />
   </component>
 </project>
