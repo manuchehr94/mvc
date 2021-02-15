@@ -2,7 +2,7 @@
     include_once __DIR__ . "/../header.php";
 ?>
 
-<section class="sectionOfBasket">
+<section class="sectionAdditional">
     <div class="wrapper">
         <div id="basket_container">
             <table class="table">
@@ -54,6 +54,7 @@
                     </tr>
                 </tbody>
             </table>
+            <a href="/?model=order&action=index">Create an order</a>
         </div>
     </div>
 </section>
