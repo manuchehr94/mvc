@@ -2,6 +2,7 @@
 
 
 include_once __DIR__ . "/../../../common/src/Service/BasketService.php";
+include_once __DIR__ . "/../../../common/src/Service/BasketDBService.php";
 include_once __DIR__ . "/../../../common/src/Service/BasketSessionService.php";
 include_once __DIR__ . "/../../../common/src/Service/BasketCookieService.php";
 include_once __DIR__ . "/../../../common/src/Service/UserService.php";
@@ -24,10 +25,10 @@ class BasketController
             throw new Exception("No permission", 403);
         }
 
-        $this->basket = BasketService::getBasketByUserId($this->user['id']);
-       // $this->basketService = (new BasketService());
+        $this->basket = BasketDBService::getBasketByUserId($this->user['id']);
+        $this->basketService = (new BasketDBService());
         //$this->basketService = (new BasketSessionService());
-        $this->basketService = (new BasketCookieService());
+       // $this->basketService = (new BasketCookieService());
 
 
         $this->items = $this->basketService->getBasketProducts((int)$this->basket['id']);

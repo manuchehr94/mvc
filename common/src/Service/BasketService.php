@@ -1,46 +1,20 @@
 <?php
 
-    include_once __DIR__ . "/../Model/Basket.php";
-    include_once __DIR__ . "/../Model/BasketItem.php";
-    include_once __DIR__ . "/interfaces/BasketInterface.php";
+include_once __DIR__ . "/interfaces/BasketInterface.php";
 
-class BasketService implements BasketInterface
+abstract class BasketService implements BasketInterface
 {
-    public static function getBasketByUserId($userId)
-    {
-        $basket = new Basket($userId);
+    abstract public static function getBasketByUserId($userId);
 
+    abstract public function updateBasketItem($basketId, $productId, $quantity);
 
-        if ($basket->getFromId() == null) {
-            $basket->userId = $userId;
-            $basket->save();
-        }
+    abstract public function deleteBasketItem($productId, $basketId);
 
-        return $basket->getFromId();
-    }
+    abstract public function createBasketItem($basketId, $productId, $quantity);
 
-    public function updateBasketItem($basketId, $productId, $quantity)
-    {
-        (new BasketItem($basketId, $productId, $quantity))->update();
-    }
+    abstract public function getBasketProducts($basketId);
 
-    public function deleteBasketItem($productId, $basketId)
-    {
-        (new BasketItem())->deleteProductByBasketId($productId, $basketId);
-    }
+    abstract public function clearBasket($basketId);
 
-    public function createBasketItem($basketId, $productId, $quantity)
-    {
-        $item = new BasketItem();
-        $item->basketId = $basketId;
-        $item->productId = $productId;
-        $item->quantity = $quantity;
-        $item->save();
-    }
-
-    public function getBasketProducts($basketId)
-    {
-        return (new BasketItem())->getByBasketId($basketId);
-    }
-
+    abstract public function getBasketIdByUserId($userId);
 }
