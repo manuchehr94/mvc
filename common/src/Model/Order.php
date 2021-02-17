@@ -352,6 +352,27 @@ class Order
         return reset($result)['last_id'] ?? null;
     }
 
+    public function update()
+    {
+        $query = "UPDATE orders SET status =        '" . $this->status . "',
+                                    updated =       '" . $this->updated . "',
+                                    delivery_id =   '" . $this->deliveryId . "',
+                                    payment_id =    '" . $this->paymentId . "',
+                                    total =         '" . $this->total . "', 
+                                    name =          '" . $this->name . "',
+                                    phone =         '" . $this->phone . "',
+                                    email =         '" . $this->email . "'
+                                WHERE id = " . $this->id . " LIMIT 1";
+
+        $result = mysqli_query($this->conn, $query);
+
+        if(!$result) {
+            throw new Exception(mysqli_error($this->conn));
+        }
+
+        return true;
+    }
+
     /**
      * @return array<Order>
      */
@@ -360,6 +381,21 @@ class Order
         $result = mysqli_query($this->conn, "Select * from orders where user_id = 
                                                             " . $this->userId . " limit 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        return reset($oneProduct);
+    }
+
+    public function all()
+    {
+        $result = mysqli_query($this->conn, "Select * from orders");
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+
+
+    public function getById($id)
+    {
+        $result = mysqli_query($this->conn, "Select * from orders where id = " . $id . " limit 1");
+        $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
         return reset($oneProduct);
     }
 }

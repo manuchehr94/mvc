@@ -121,6 +121,29 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="/php/Alif_Academy_php/shop/backend/index.php?model=order&action=read" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                Orders
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/php/Alif_Academy_php/shop/backend/index.php?model=order&action=create" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Create Order</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/php/Alif_Academy_php/shop/backend/index.php?model=order&action=read" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>List of Orders</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
