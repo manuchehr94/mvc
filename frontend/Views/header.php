@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/stars/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="/css/stars/styles.css">
     <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/shop-style.css">
     <script src="/js/jquery.min.js"></script>
     <script src="/js/script.js"></script>
 </head>
@@ -52,7 +53,7 @@
             </nav>
             <div class="searchUserCart righted">
                 <a href="#"><img src="/img/search.png" alt="search" title="search"></a>
-                <a href="#"><img src="/img/user.png" alt="user" title="user"></a>
+                <a href="/?model=site&action=login"><img src="/img/user.png" alt="user" title="user"></a>
                 <a href="#"><img src="/img/cart.png" alt="cart" title="cart"></a>
             </div>
         </div>

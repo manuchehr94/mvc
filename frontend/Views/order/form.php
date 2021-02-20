@@ -4,8 +4,8 @@
 
 <section class="sectionAdditional">
     <div class="wrapper">
-        <h1>Create Order</h1>
-        <form action="/?model=order&action=create" method="POST">
+        <h1 class="h-of-forms">Create an Order</h1>
+        <form class="form-of-order" action="/?model=order&action=create" method="POST">
             <div>
                 <label>Name:</label>
                 <input type="text" name="name" required>
@@ -35,7 +35,7 @@
                 </select>
             </div>
             <div>
-                <label>Comment</label><br>
+                <label>Comment</label>
                 <textarea name="comment"></textarea>
             </div>
             <div>

@@ -40,9 +40,9 @@
                        <div class="col-sm-10">
                            <select name="delivery">
                                <option disabled selected></option>
-                               <option value="1" <?=($oneNews['delivery_id'] == '1') ? 'selected' : '' ?>>Delivery 1</option>
-                               <option value="2" <?=($oneNews['delivery_id'] == '2') ? 'selected' : '' ?>>Delivery 2</option>
-                               <option value="3" <?=($oneNews['delivery_id'] == '3') ? 'selected' : '' ?>>Delivery 3</option>
+                               <option value="1" <?=($oneNews['delivery_id'] ?? null == '1') ? 'selected' : '' ?>>Delivery 1</option>
+                               <option value="2" <?=($oneNews['delivery_id'] ?? null == '2') ? 'selected' : '' ?>>Delivery 2</option>
+                               <option value="3" <?=($oneNews['delivery_id'] ?? null == '3') ? 'selected' : '' ?>>Delivery 3</option>
                            </select>
                        </div>
                    </div>
@@ -51,9 +51,9 @@
                        <div class="col-sm-10">
                            <select name="payment">
                                <option disabled selected></option>
-                               <option value="1" <?=($oneNews['payment_id'] == '1') ? 'selected' : '' ?>>Payment 1</option>
-                               <option value="2" <?=($oneNews['payment_id'] == '2') ? 'selected' : '' ?>>Payment 2</option>
-                               <option value="3" <?=($oneNews['payment_id'] == '3') ? 'selected' : '' ?>>Payment 3</option>
+                               <option value="1" <?=($oneNews['payment_id'] ?? null == '1') ? 'selected' : '' ?>>Payment 1</option>
+                               <option value="2" <?=($oneNews['payment_id'] ?? null == '2') ? 'selected' : '' ?>>Payment 2</option>
+                               <option value="3" <?=($oneNews['payment_id'] ?? null == '3') ? 'selected' : '' ?>>Payment 3</option>
                            </select>
                        </div>
                    </div>
@@ -87,7 +87,8 @@
                            <select name="status">
                                <option disabled selected></option>
                                <?php foreach (OrderService::getStatuses() as $key => $label) : ?>
-                                    <option value="<?=$key?>" <?=($key == $oneNews['status']) ? 'selected' : '' ?>><?=$label?>
+                                    <option value="<?=$key?>"
+                                        <?=($oneNews['status'] ?? null == $key) ? 'selected' : '' ?>><?=$label?>
                                     </option>
                                <?php endforeach; ?>
                            </select>

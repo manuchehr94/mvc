@@ -54,7 +54,7 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="/?model=order&action=index">Create an order</a>
+            <a href="/?model=order&action=index" id="btn-create-order">Create an order</a>
         </div>
     </div>
 </section>

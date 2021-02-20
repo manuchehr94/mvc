@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/Views/orders/List.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Views/orders/form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Service/OrderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/OrderService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Views/orders/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/orders/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Views/basket/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/basket/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Views/order/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/order/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/site/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,19 +57,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/Views" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\Views" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Controller" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Service" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\Views\order" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -101,6 +111,7 @@
       <workItem from="1613384041868" duration="7062000" />
       <workItem from="1613472775579" duration="7844000" />
       <workItem from="1613548586118" duration="9110000" />
+      <workItem from="1613803338188" duration="5890000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,8 @@
 
     <section class="detailsOFProduct">
         <div class="wrapper">
-            <form action="/?model=auth&action=check" method="POST">
+            <h3 class="h-of-forms">Login</h3>
+            <form class="form-of-login" action="/?model=auth&action=check" method="POST">
                 <div>
                     <label>Login:</label>
                     <input type="text" name="login">

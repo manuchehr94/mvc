@@ -9,6 +9,7 @@ class OrderController implements ControllerInterface
 {
     public function create()
     {
+        $oneNews = [];
         include_once __DIR__ . "/../../Views/orders/form.php";
     }
 
