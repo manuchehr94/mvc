@@ -13,4 +13,10 @@ class SecurityService
         header("Location: /");
         die();
     }
+
+    public static function redirectToLoginPage()
+    {
+        header("Location: /?model=site&action=login");
+        die();
+    }
 }

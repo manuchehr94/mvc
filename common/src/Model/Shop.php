@@ -35,7 +35,11 @@ class Shop
             )";
         }
 
-        mysqli_query($this->conn, $query);
+        $result = mysqli_query($this->conn, $query);
+
+        if(!$result) {
+            throw new Exception(mysqli_error($this->conn), 400);
+        }
     }
 
     public function all()

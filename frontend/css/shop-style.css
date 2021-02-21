@@ -60,7 +60,8 @@
 }
 
 .form-of-login input[type=text],
-.form-of-login input[type=password]
+.form-of-login input[type=password],
+.form-of-login input[type=email]
 {
     padding: 5px;
     line-height: 20px;
