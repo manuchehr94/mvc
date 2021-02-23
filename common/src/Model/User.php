@@ -1,13 +1,14 @@
 <?php
 
     include_once __DIR__ . "/../Service/DBConnector.php";
+    include_once __DIR__ . "/../Service/UserService.php";
 
 class User
 {
     const ROLE_USER_VALUE = 'ROLE USER';
 
     /**
-     * @var int
+     * @var int|null
      */
     private $id;
 
@@ -37,15 +38,12 @@ class User
     private $roles;
 
     /**
-     * @return int
-     */
-
-    /**
      * @var false|mysqli
      */
     private $conn;
 
-    public function __construct($id = null,
+    public function __construct(
+                                $id = null,
                                 $name = null,
                                 $phone = null,
                                 $email = null,
@@ -55,17 +53,16 @@ class User
     {
         $this->conn = DBConnector::getInstance()->connect();
 
-        $this->setId($id);
-        $this->setName($name);
-        $this->setPhone($phone);
-        $this->setEmail($email);
-        $this->setPassword($password);
-        $this->setRoles($roles);
+        $this->id = $id;
+        $this->name = $name;
+        $this->phone = $phone;
+        $this->email = $email;
+        $this->password = UserService::encodePassword($password);
+        $this->roles = $roles;
     }
 
-
     /**
-     * @return int
+     * @return int|null
      */
     public function getId(): int
     {
@@ -73,11 +70,12 @@ class User
     }
 
     /**
-     * @param int $id
+     * @param int|null $id
      */
     public function setId(int $id)
     {
         $this->id = $id;
+
     }
 
     /**
@@ -187,6 +185,36 @@ class User
         if(!$result) {
             throw new Exception(mysqli_error($this->conn), 400);
         }
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function getById($id)
+    {
+        $result = mysqli_query($this->conn, "Select * from `user` where id = '" . $id . "' limit 1");
+        $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return reset($oneProduct);
+    }
+
+    /**
+     * @param $email
+     * @return mixed
+     * @throws Exception
+     */
+    public function getByEmail($email)
+    {
+        $result = mysqli_query($this->conn, "Select * from `user` where email = '" . $email . "' limit 1");
+
+        if(!$result) {
+            throw new Exception("User not found", 404);
+        }
+
+        $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return reset($oneProduct);
     }
 
     

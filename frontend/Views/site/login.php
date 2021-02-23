@@ -18,6 +18,10 @@
                     <input type="submit" value="login">
                 </div>
             </form>
+            <form class="form-of-login" action="/?model=register&action=form" method="POST">
+                Don't have an account? Please
+                <input type="submit" value="Register">
+            </form>
         </div>
     </section>
 

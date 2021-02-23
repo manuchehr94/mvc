@@ -5,6 +5,13 @@
 <section class="sectionAdditional">
     <div class="wrapper">
         <div id="basket_container">
+            <!-- Красиво оформить-->
+            <?php if(empty($items) || !is_array($items)) : ?>
+                <div>
+                    <div><br><br><br><br><br><br></div>
+                    <p style="text-align: center">The basket is empty</p>
+                </div>
+            <?php else: ?>
             <table class="table">
                 <thead>
                     <tr>
@@ -55,6 +62,7 @@
                 </tbody>
             </table>
             <a href="/?model=order&action=index" id="btn-create-order">Create an order</a>
+            <?php endif; ?>
         </div>
     </div>
 </section>
