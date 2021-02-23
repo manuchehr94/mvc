@@ -53,18 +53,18 @@ class User
     {
         $this->conn = DBConnector::getInstance()->connect();
 
-        $this->id = $id;
-        $this->name = $name;
-        $this->phone = $phone;
-        $this->email = $email;
-        $this->password = UserService::encodePassword($password);
-        $this->roles = $roles;
+        $this->setId($id);
+        $this->setName($name);
+        $this->setPhone($phone);
+        $this->setEmail($email);
+        $this->setPassword($password);
+        $this->setRoles($roles);
     }
 
     /**
      * @return int|null
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -72,7 +72,7 @@ class User
     /**
      * @param int|null $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -81,7 +81,7 @@ class User
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -89,7 +89,7 @@ class User
     /**
      * @param string $name
      */
-    public function setName(string $name)
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -97,7 +97,7 @@ class User
     /**
      * @return string
      */
-    public function getPhone(): string
+    public function getPhone()
     {
         return $this->phone;
     }
@@ -105,7 +105,7 @@ class User
     /**
      * @param string $phone
      */
-    public function setPhone(string $phone)
+    public function setPhone($phone)
     {
         $this->phone = $phone;
     }
@@ -113,7 +113,7 @@ class User
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getEmail()
     {
         return $this->email;
     }
@@ -121,7 +121,7 @@ class User
     /**
      * @param string $email
      */
-    public function setEmail(string $email)
+    public function setEmail($email)
     {
         $this->email = $email;
     }
@@ -129,7 +129,7 @@ class User
     /**
      * @return string
      */
-    public function getPassword(): string
+    public function getPassword()
     {
         return $this->password;
     }
@@ -137,15 +137,15 @@ class User
     /**
      * @param string $password
      */
-    public function setPassword(string $password)
+    public function setPassword($password)
     {
-        $this->password = md5($password);
+        $this->password = UserService::encodePassword($password);
     }
 
     /**
      * @return array
      */
-    public function getRoles(): array
+    public function getRoles()
     {
         return $this->roles;
     }
@@ -153,7 +153,7 @@ class User
     /**
      * @param array $roles
      */
-    public function setRoles(array $roles)
+    public function setRoles($roles)
     {
         $this->roles = $roles;
     }

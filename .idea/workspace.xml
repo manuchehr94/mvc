@@ -21,14 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/202102212030_migration_add_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/202102212030_migration_add_user_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Service/SecurityService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/SecurityService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Service/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/basket/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/basket/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/site/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/AuthController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +56,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Migrations" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\Views\register" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\Views" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,6 +120,7 @@
       <workItem from="1613898953741" duration="11273000" />
       <workItem from="1613992148680" duration="4934000" />
       <workItem from="1614063167943" duration="11824000" />
+      <workItem from="1614080570103" duration="6601000" />
     </task>
     <servers />
   </component>
