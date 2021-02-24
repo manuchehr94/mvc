@@ -55,12 +55,12 @@
                                         </i>
                                         View
                                     </a>-->
-                                    <a class="btn btn-info btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=product&action=update&id=<?=$products['id']?>">
+                                    <a class="btn btn-info btn-sm" href="/?model=product&action=update&id=<?=$products['id']?>">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=product&action=delete&id=<?=$products['id']?>">
+                                    <a class="btn btn-danger btn-sm" href="/?model=product&action=delete&id=<?=$products['id']?>">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

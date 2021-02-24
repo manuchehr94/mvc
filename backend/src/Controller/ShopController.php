@@ -1,9 +1,9 @@
 <?php
 
-include_once __DIR__ . "/Interface/ControllerInterface.php";
+include_once __DIR__ . "/AbstractController.php";
 include_once __DIR__ . "/../../../common/src/Model/Shop.php";
 
-class ShopController implements ControllerInterface
+class ShopController extends AbstractController
 {
     public function create()
     {

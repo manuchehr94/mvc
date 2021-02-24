@@ -20,7 +20,7 @@
     </section>
     <section class="content">
         <div class="card card-info">
-            <form class="form-horizontal" action="/php/Alif_Academy_php/shop/backend/index.php?model=shop&action=save" method="post" enctype="multipart/form-data">
+            <form class="form-horizontal" action="/?model=shop&action=save" method="post" enctype="multipart/form-data">
                <div class="card-body">
                    <input value="<?=$oneShop['id'] ?? "" ?>" type = "hidden" name ="id">
                    <div class="form-group row">

@@ -47,12 +47,12 @@
                                         </i>
                                         View
                                     </a>-->
-                                    <a class="btn btn-info btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=news&action=update&id=<?=$news['id']?>">
+                                    <a class="btn btn-info btn-sm" href="/?model=news&action=update&id=<?=$news['id']?>">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="/php/Alif_Academy_php/shop/backend/index.php?model=news&action=delete&id=<?=$news['id']?>">
+                                    <a class="btn btn-danger btn-sm" href="/?model=news&action=delete&id=<?=$news['id']?>">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

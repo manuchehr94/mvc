@@ -217,5 +217,31 @@ class User
         return reset($oneProduct);
     }
 
+    /**
+     * @param array $roles
+     * @param $controller
+     * @param $action
+     * @return bool
+     * @throws Exception
+     */
+    public function isAccess(array $roles, $controller, $action)
+    {
+        $permission = SecurityService::getPermissionNameByControllerAndAction($controller, $action);
+
+        $result = mysqli_query($this->conn, "Select * from `rbac_access` 
+                            where role in ('".  implode("','", $roles) ."') and permission = '$permission'");
+
+        if(!$result) {
+            throw new Exception("Permission error", 400);
+        }
+
+        $accesses = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        foreach ($accesses as $access) {
+            if($access) return true;
+        }
+
+        throw new Exception("No Permission", 403);
+    }
     
 }

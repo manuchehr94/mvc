@@ -14,6 +14,9 @@ class Router
 
     public function index() {
         try {
+
+            global $side;
+
             $model = $_GET['model'] ?? 'site';
             $model = htmlspecialchars($model);
             $model = ucfirst($model);
@@ -38,7 +41,7 @@ class Router
                 throw new Exception('Action not found', 404);
             }
         } catch(Exception $e) {
-            ExceptionService::error($e,'frontend');
+            ExceptionService::error($e, $side);
         }
     }
 }
