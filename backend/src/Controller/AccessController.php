@@ -3,6 +3,7 @@
 include_once __DIR__ . "/AbstractController.php";
 include_once __DIR__ . "/../../../common/src/Model/Role.php";
 include_once __DIR__ . "/../../../common/src/Model/Permission.php";
+include_once __DIR__ . "/../../../common/src/Model/Access.php";
 
 class AccessController extends AbstractController
 {
@@ -31,6 +32,15 @@ class AccessController extends AbstractController
 
     public function update()
     {
+
+        $accesses = [];
+
+        foreach ((new Access())->all() as $item) {
+            $accesses[$item['role']][$item['permission']] = true;
+        }
+
+
+
         $roles = (new Role())->all();
         $permissions = (new Permission())->all();
 

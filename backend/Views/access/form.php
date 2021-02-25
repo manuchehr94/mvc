@@ -22,12 +22,12 @@ include_once __DIR__ . "/../header.php";
             <div class="card card-info">
                 <form class="form-horizontal" action="/?model=access&action=save" method="post" enctype="multipart/form-data">
                     <div class="card-body">
-                        <table>
+                        <table id="access-table">
                             <thead>
                                 <tr>
-                                    <td>Roles</td>
+                                    <td></td>
                                     <?php foreach ($roles as $role) : ?>
-                                        <td><?=$role?></td>
+                                        <td><div><span><?=$role?></span></div></td>
                                     <?php endforeach;?>
                                 </tr>
                             </thead>
@@ -36,7 +36,8 @@ include_once __DIR__ . "/../header.php";
                                     <tr>
                                         <td><?=$permission?></td>
                                         <?php foreach ($roles as $role) : ?>
-                                            <td><input type="checkbox" name="access[<?=$role?>][<?=$permission?>]"></td>
+                                            <td><input type="checkbox" <?=(isset($accesses[$role][$permission]))
+                                                    ? 'checked="checked"' : ''?> name="access[<?=$role?>][<?=$permission?>]"></td>
                                         <?php  endforeach;?>
                                     </tr>
                                 <?php endforeach;?>
