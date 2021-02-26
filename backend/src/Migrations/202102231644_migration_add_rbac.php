@@ -45,8 +45,8 @@ class MigrationAddRbac
 
         $result = mysqli_query($this->conn,
                         "INSERT INTO `rbac_role` (`role`)
-                                VALUES ('ROLE_ADMIN'), ('ROLE_MANAGER'), ('ROLE_SHOP_MANAGER'),
-                                            ('ROLE_SHOP_ADMIN'), ('ROLE_PRODUCT_MANAGER')
+                                VALUES ('ROLE_SUPERADMIN'), ('ROLE_ADMIN'), ('ROLE_MANAGER'), 
+                                ('ROLE_SHOP_MANAGER'), ('ROLE_SHOP_ADMIN'), ('ROLE_PRODUCT_MANAGER')
                                ");
 
         if(!$result) {

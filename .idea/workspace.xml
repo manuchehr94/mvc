@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/access/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/access/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/202102231644_migration_add_rbac.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/202102231644_migration_add_rbac.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Access.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,9 @@
       <workItem from="1614147967338" duration="18853000" />
       <workItem from="1614226244030" duration="5344000" />
       <workItem from="1614253901687" duration="1047000" />
-      <workItem from="1614255790440" duration="3867000" />
+      <workItem from="1614255790440" duration="4449000" />
+      <workItem from="1614331694821" duration="1314000" />
+      <workItem from="1614333587897" duration="3013000" />
     </task>
     <servers />
   </component>

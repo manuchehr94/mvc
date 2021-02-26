@@ -18,11 +18,15 @@ class AccessController extends AbstractController
     public function save()
     {
         if(!empty($_POST)) {
-            print_r($_POST);
-            die();
+            if((new Access())->clear()) {
+                if((new Access())->createAll($_POST['access'] ?? [])) {
+                    header("Location: /?model=access&action=update");
+                    die();
+                }
+            }
+
         }
 
-        return $this->read();
     }
 
     public function delete()
