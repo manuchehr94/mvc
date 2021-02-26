@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/Views/permission/List.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Views/permission/form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/202102231644_migration_add_rbac.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/202102231644_migration_add_rbac.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Access.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Views/site/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/site/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Permission.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,17 +60,17 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\Views" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Controller" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\Views\site" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,7 +125,7 @@
       <workItem from="1614253901687" duration="1047000" />
       <workItem from="1614255790440" duration="4449000" />
       <workItem from="1614331694821" duration="1314000" />
-      <workItem from="1614333587897" duration="3013000" />
+      <workItem from="1614333587897" duration="5940000" />
     </task>
     <servers />
   </component>
